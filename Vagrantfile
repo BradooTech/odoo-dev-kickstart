@@ -9,7 +9,7 @@ $runserver = <<SCRIPT
     cd /home/ubuntu/odoo/odoo
 
     tmux -2 new-session -d -s odoo -n 'odoo'
-    tmux send-keys "./odoo-bin --config=odoo-config" C-m
+    tmux send-keys "./odoo-bin --addons-path=addons,odoo/addons,~/odoo/odoo-brasil,~/odoo/enterprise,~/odoo-modules  --config=odoo-config" C-m
 
 SCRIPT
 

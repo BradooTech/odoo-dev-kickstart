@@ -138,4 +138,4 @@ echo "db_user = odoo" >> ~/odoo/odoo/odoo-config
 echo "db_password= 123" >> ~/odoo/odoo/odoo-config
 
 cd ${FOLDER}/odoo
-./odoo-bin --config=odoo-config
+./odoo-bin --addons-path=addons,odoo/addons,~/odoo/odoo-brasil,~/odoo/enterprise,~/odoo-modules --config=odoo-config
